@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Responsive Design</title>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background-color: black;
+            }
+            .responsive-div{
+                color: wheat;
+                background-color: gray;
+                width: 100%;
+                max-width: 1200px;
+                padding: 20px;
+                font-size: 24px;
+            }
+            @media (max-width: 600px){
+                .responsive-div{
+                    background-color: blueviolet;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="responsive-div">
+            This div changes colour based on the screen size.
+        </div>
+    </body>
+</html>
